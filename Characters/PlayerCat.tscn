@@ -17,6 +17,7 @@ move_speed = 200.0
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 2.72599, 5.77705 )
+z_index = 5
 texture = SubResource( 4 )
 hframes = 4
 vframes = 4
