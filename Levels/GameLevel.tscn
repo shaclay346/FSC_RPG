@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Characters/PlayerCat.tscn" type="PackedScene" id=1]
+
+[node name="GameLevel" type="Node2D"]
+scale = Vector2( 1.21111, 0.957046 )
+
+[node name="PlayerCat" parent="." instance=ExtResource( 1 )]
+position = Vector2( 79.2661, 133.745 )
+scale = Vector2( 0.429682, 0.195173 )

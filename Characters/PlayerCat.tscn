@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Characters/PlayerCat.gd" type="Script" id=2]
+
+[sub_resource type="StreamTexture" id=4]
+resource_local_to_scene = true
+flags = 4
+load_path = "res://.import/Basic Charakter Spritesheet.png-379a5bdbaf43fe9b4cf3b0ecbd0eff7d.stex"
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 20.0671, 45.6632 )
+
+[node name="PlayerCat" type="KinematicBody2D"]
+scale = Vector2( -2.53005, 1.60472 )
+script = ExtResource( 2 )
+move_speed = 200.0
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 2.72599, 5.77705 )
+texture = SubResource( 4 )
+hframes = 4
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.592871, 1.5579 )
+rotation = -3.14159
+scale = Vector2( 0.856792, 1.00305 )
+shape = SubResource( 1 )
