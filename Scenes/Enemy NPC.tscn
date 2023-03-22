@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Zombie.png" type="Texture" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Idle"
+
+[node name="Enemy NPC" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+hframes = 13
+vframes = 5
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+anims/Idle = SubResource( 1 )
