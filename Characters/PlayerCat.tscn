@@ -23,7 +23,7 @@ hframes = 4
 vframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.592871, 1.5579 )
+position = Vector2( 1.581, -3.11582 )
 rotation = -3.14159
 scale = Vector2( 0.856792, 1.00305 )
 shape = SubResource( 1 )
