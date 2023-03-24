@@ -1,5 +1,5 @@
 extends Node2D
-var outside = "res://Scenes/Tutorial Level.tscn"
+var outside = "res://Scenes/Tutorial Level.gd"
 var entered = false
 
 
