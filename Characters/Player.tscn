@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Assets/icon.png" type="Texture" id=1]
+[ext_resource path="res://Assets/sprites-run.png" type="Texture" id=1]
 [ext_resource path="res://Characters/Player.gd" type="Script" id=2]
 [ext_resource path="res://Assets/SimpleKeys/Classic/Dark/Single PNGs/E.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 30, 30 )
+extents = Vector2( 33.5, 25 )
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( 212, 83 )
+position = Vector2( 36, 22 )
 collision_layer = 2
 script = ExtResource( 2 )
 __meta__ = {
@@ -16,11 +16,14 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1, 0 )
+position = Vector2( 9.5, 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 17, -11 )
+scale = Vector2( 2.52941, 1.45833 )
 texture = ExtResource( 1 )
+hframes = 11
 
 [node name="Key" type="Sprite" parent="."]
 position = Vector2( 1, -59 )
