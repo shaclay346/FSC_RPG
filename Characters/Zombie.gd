@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-var speed = 65
+var speed = 75
 var motion = Vector2.ZERO
 var player = null
 
@@ -16,10 +16,22 @@ func _physics_process(delta):
 func _on_Area2D_body_entered(body):
 	print("entered")
 	player = body
-#	pass # Replace with function body.
 
 
 func _on_Area2D_body_exited(body):
 	print("exited")
 	player = null
-#	pass # Replace with function body.
+
+
+
+
+
+
+func _on_Area2D2_body_entered(body):
+	print("sprite hit, send to fight scene")
+
+
+
+
+
+
