@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_up attack.png-4c94f85ca00e71b3325486449ccf0c38.stex"
+path="res://.import/_up attack.png-d8ab9351b4ededeaad91fb2e8a0e27ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/RPGMCharacter_v1.0/_up attack.png"
-dest_files=[ "res://.import/_up attack.png-4c94f85ca00e71b3325486449ccf0c38.stex" ]
+source_file="res://Assets/RPGMCharacter_v1.0/_up attack.png"
+dest_files=[ "res://.import/_up attack.png-d8ab9351b4ededeaad91fb2e8a0e27ac.stex" ]
 
 [params]
 

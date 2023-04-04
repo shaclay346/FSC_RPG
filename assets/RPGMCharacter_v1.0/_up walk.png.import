@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_up walk.png-bc43841dbdea6cdf27669f4fa5957ea8.stex"
+path="res://.import/_up walk.png-6a0ca8b2e06ea4eeb182839c4c0eb4cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/RPGMCharacter_v1.0/_up walk.png"
-dest_files=[ "res://.import/_up walk.png-bc43841dbdea6cdf27669f4fa5957ea8.stex" ]
+source_file="res://Assets/RPGMCharacter_v1.0/_up walk.png"
+dest_files=[ "res://.import/_up walk.png-6a0ca8b2e06ea4eeb182839c4c0eb4cf.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dead (6).png-1f32c34f0c53e15bfa59e78dcf664c7f.stex"
+path="res://.import/Dead (6).png-069af94c16ef2217327fcfa3a8696467.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/png/female/Dead (6).png"
-dest_files=[ "res://.import/Dead (6).png-1f32c34f0c53e15bfa59e78dcf664c7f.stex" ]
+source_file="res://Assets/png/female/Dead (6).png"
+dest_files=[ "res://.import/Dead (6).png-069af94c16ef2217327fcfa3a8696467.stex" ]
 
 [params]
 

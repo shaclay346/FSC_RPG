@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Attack (2).png-6515b065b8a15dcba9ddb1b7129a4db6.stex"
+path="res://.import/Attack (2).png-58e6cc6955849ec5def9cf7c8963e87b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/png/female/Attack (2).png"
-dest_files=[ "res://.import/Attack (2).png-6515b065b8a15dcba9ddb1b7129a4db6.stex" ]
+source_file="res://Assets/png/female/Attack (2).png"
+dest_files=[ "res://.import/Attack (2).png-58e6cc6955849ec5def9cf7c8963e87b.stex" ]
 
 [params]
 
