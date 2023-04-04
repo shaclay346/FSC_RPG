@@ -1,9 +1,10 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Characters/Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Battle Backgrounds/battleback1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Fonts/NESCyrillic.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scenes/Battle.gd" type="Script" id=4]
+[ext_resource path="res://Assets/Zombie/Zombie Zoomed In.png" type="Texture" id=5]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.247059, 0.941176, 0.101961, 1 )
@@ -44,7 +45,7 @@ border_width_left = 1
 border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
-border_color = Color( 1, 0.996078, 0.996078, 1 )
+border_color = Color( 1, 1, 0.996078, 1 )
 
 [sub_resource type="StyleBoxFlat" id=9]
 bg_color = Color( 0, 0, 0, 1 )
@@ -57,6 +58,92 @@ border_color = Color( 1, 1, 1, 1 )
 [sub_resource type="DynamicFont" id=10]
 size = 72
 font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=13]
+resource_name = "Player Damage Shake"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Camera2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ), Vector2( 16.062, 13.315 ), Vector2( 2, -15 ), Vector2( -12, 20 ), Vector2( 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyContainer/Enemy:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("EnemyContainer:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "enemy_damaged"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyContainer/Enemy:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "enemy_died"
+tracks/0/type = "value"
+tracks/0/path = NodePath("EnemyContainer:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
 
 [node name="Battle" type="Control"]
 anchor_right = 1.082
@@ -100,8 +187,17 @@ align = 1
 valign = 1
 
 [node name="Enemy" parent="EnemyContainer" instance=ExtResource( 1 )]
-position = Vector2( -314, -266 )
+position = Vector2( -317, -293 )
 scale = Vector2( 4.42096, 3.94573 )
+
+[node name="TextureRect" type="TextureRect" parent="EnemyContainer"]
+visible = false
+margin_top = 20.0
+margin_right = 463.0
+margin_bottom = 54.0
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 700, 0 )
+texture = ExtResource( 5 )
 
 [node name="PlayerPanel" type="Panel" parent="."]
 anchor_top = 1.0
@@ -141,7 +237,9 @@ size_flags_horizontal = 3
 size_flags_vertical = 4
 custom_styles/fg = SubResource( 1 )
 custom_styles/bg = SubResource( 2 )
-value = 50.0
+max_value = 50.0
+step = 1.0
+value = 25.0
 percent_visible = false
 
 [node name="Label" type="Label" parent="PlayerPanel/PlayerData/ProgressBar"]
@@ -190,7 +288,7 @@ custom_styles/hover = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
 text = "Attack"
 
-[node name="Defend" type="Button" parent="ActionsPanel/Actions"]
+[node name="Items" type="Button" parent="ActionsPanel/Actions"]
 margin_left = 336.0
 margin_right = 668.0
 margin_bottom = 64.0
@@ -201,7 +299,7 @@ custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 6 )
 custom_styles/hover = SubResource( 7 )
 custom_styles/normal = SubResource( 8 )
-text = "Defend"
+text = "Items"
 
 [node name="Run" type="Button" parent="ActionsPanel/Actions"]
 margin_left = 672.0
@@ -235,4 +333,16 @@ margin_bottom = -8.0
 custom_fonts/font = SubResource( 10 )
 text = "Text goes here."
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+"anims/Player Damage Shake" = SubResource( 13 )
+anims/RESET = SubResource( 12 )
+anims/enemy_damaged = SubResource( 11 )
+anims/enemy_died = SubResource( 14 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+anchor_mode = 0
+current = true
+
+[connection signal="pressed" from="ActionsPanel/Actions/Attack" to="." method="_on_Attack_pressed"]
 [connection signal="pressed" from="ActionsPanel/Actions/Run" to="." method="_on_Run_pressed"]

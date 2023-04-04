@@ -3,6 +3,7 @@ extends KinematicBody2D
 var speed = 75
 var motion = Vector2.ZERO
 var player = null
+var counter = 0
 
 func _physics_process(delta):
 	motion = Vector2.ZERO
@@ -23,12 +24,13 @@ func _on_Area2D_body_exited(body):
 	player = null
 
 
-
-
-
-
 func _on_Area2D2_body_entered(body):
 	print("sprite hit, send to fight scene")
+	counter += 1
+	
+	if(counter == 2):
+		yield(get_tree().create_timer(0.3), "timeout")
+		get_tree().change_scene("res://Scenes/Battle.tscn")
 
 
 
