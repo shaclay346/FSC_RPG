@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Basic tools and meterials.png-4f921d265cff4bfe4b5a4aaed324f36f.stex"
+path="res://.import/Basic tools and meterials.png-9ac6791c4507f8ae5e55978be47db219.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials.png"
-dest_files=[ "res://.import/Basic tools and meterials.png-4f921d265cff4bfe4b5a4aaed324f36f.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Basic tools and meterials.png"
+dest_files=[ "res://.import/Basic tools and meterials.png-9ac6791c4507f8ae5e55978be47db219.stex" ]
 
 [params]
 

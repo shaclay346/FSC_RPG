@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Basic Charakter Actions.png-ae9959ded2a2331c5129918daf54ef06.stex"
+path="res://.import/Basic Charakter Actions.png-3b14891181880cb0fadb3ec15e9851a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png"
-dest_files=[ "res://.import/Basic Charakter Actions.png-ae9959ded2a2331c5129918daf54ef06.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Characters/Basic Charakter Actions.png"
+dest_files=[ "res://.import/Basic Charakter Actions.png-3b14891181880cb0fadb3ec15e9851a6.stex" ]
 
 [params]
 

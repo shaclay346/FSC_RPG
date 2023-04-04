@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Basic Plants.png-5f4d4645bf3b718cd7783c8ab4601636.stex"
+path="res://.import/Basic Plants.png-391cc8bb593f1f5f3ceb0b720aa0bc72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants.png"
-dest_files=[ "res://.import/Basic Plants.png-5f4d4645bf3b718cd7783c8ab4601636.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Basic Plants.png"
+dest_files=[ "res://.import/Basic Plants.png-391cc8bb593f1f5f3ceb0b720aa0bc72.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Paths.png-266fec6c62dbe5ab6a0ee54389a17c8a.stex"
+path="res://.import/Paths.png-841ca7b1e1bb2538e6cea4c3f4733f91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png"
-dest_files=[ "res://.import/Paths.png-266fec6c62dbe5ab6a0ee54389a17c8a.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Objects/Paths.png"
+dest_files=[ "res://.import/Paths.png-841ca7b1e1bb2538e6cea4c3f4733f91.stex" ]
 
 [params]
 

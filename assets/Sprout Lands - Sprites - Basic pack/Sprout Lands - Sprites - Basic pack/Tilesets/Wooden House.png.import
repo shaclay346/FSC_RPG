@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wooden House.png-673b03b6efcbc74ab02c5d50ce19b793.stex"
+path="res://.import/Wooden House.png-1ec795bc5ccd01bdd740fbc35541cca6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png"
-dest_files=[ "res://.import/Wooden House.png-673b03b6efcbc74ab02c5d50ce19b793.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png"
+dest_files=[ "res://.import/Wooden House.png-1ec795bc5ccd01bdd740fbc35541cca6.stex" ]
 
 [params]
 

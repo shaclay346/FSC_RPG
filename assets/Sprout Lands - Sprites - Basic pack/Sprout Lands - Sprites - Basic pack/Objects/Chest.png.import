@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chest.png-1bb03c1f392d97bdb2bfad10572b6b69.stex"
+path="res://.import/Chest.png-024d0cc70b4a2123385f7a253bf814ff.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Chest.png"
-dest_files=[ "res://.import/Chest.png-1bb03c1f392d97bdb2bfad10572b6b69.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Objects/Chest.png"
+dest_files=[ "res://.import/Chest.png-024d0cc70b4a2123385f7a253bf814ff.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Color pallete in aseprite - screenshot.PNG-49de7f73d10ecf236d6156bb11c6df9e.stex"
+path="res://.import/Color pallete in aseprite - screenshot.PNG-08c7a8980c7d9067bf6c4246110b5591.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
-dest_files=[ "res://.import/Color pallete in aseprite - screenshot.PNG-49de7f73d10ecf236d6156bb11c6df9e.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
+dest_files=[ "res://.import/Color pallete in aseprite - screenshot.PNG-08c7a8980c7d9067bf6c4246110b5591.stex" ]
 
 [params]
 

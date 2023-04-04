@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wood Bridge.png-c16051b5f48f24f0bc4d5f96442fe723.stex"
+path="res://.import/Wood Bridge.png-c2526d281df7d05715d5a24690196fb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png"
-dest_files=[ "res://.import/Wood Bridge.png-c16051b5f48f24f0bc4d5f96442fe723.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Objects/Wood Bridge.png"
+dest_files=[ "res://.import/Wood Bridge.png-c2526d281df7d05715d5a24690196fb1.stex" ]
 
 [params]
 

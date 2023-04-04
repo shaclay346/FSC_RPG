@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass.png-e0758f10d79fd2566e5773a76b9e62dd.stex"
+path="res://.import/Grass.png-8ca0c5e20e1c43d0c6c9f4de9799b761.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Grass.png"
-dest_files=[ "res://.import/Grass.png-e0758f10d79fd2566e5773a76b9e62dd.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Grass.png"
+dest_files=[ "res://.import/Grass.png-8ca0c5e20e1c43d0c6c9f4de9799b761.stex" ]
 
 [params]
 

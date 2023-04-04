@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tilled Dirt.png-2eb1f6c6db74aeab0ccb8cc58f0a0e7f.stex"
+path="res://.import/Tilled Dirt.png-4e58545a92d47c59df9c8292094bada7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Tilled Dirt.png"
-dest_files=[ "res://.import/Tilled Dirt.png-2eb1f6c6db74aeab0ccb8cc58f0a0e7f.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/old tiles/Tilled Dirt.png"
+dest_files=[ "res://.import/Tilled Dirt.png-4e58545a92d47c59df9c8292094bada7.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fences.png-0e0c7820add70670a8be2c9781d73b53.stex"
+path="res://.import/Fences.png-72ec4862d7585f58f1f55f3b7baa2154.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png"
-dest_files=[ "res://.import/Fences.png-0e0c7820add70670a8be2c9781d73b53.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png"
+dest_files=[ "res://.import/Fences.png-72ec4862d7585f58f1f55f3b7baa2154.stex" ]
 
 [params]
 
