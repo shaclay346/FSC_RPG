@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/_down idle.png-18d32aca2e12d48e01f3adb77d53b382.stex"
+path="res://.import/_down idle.png-2964e86d05def0eb4f57ca06d385af01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Sprout Lands - Sprites - Basic pack/Characters/_down idle.png"
-dest_files=[ "res://.import/_down idle.png-18d32aca2e12d48e01f3adb77d53b382.stex" ]
+source_file="res://Assets/Sprout Lands - Sprites - Basic pack/Characters/_down idle.png"
+dest_files=[ "res://.import/_down idle.png-2964e86d05def0eb4f57ca06d385af01.stex" ]
 
 [params]
 
