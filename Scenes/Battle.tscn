@@ -1,6 +1,5 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://Characters/Enemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Battle Backgrounds/battleback1.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Fonts/NESCyrillic.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://Scenes/Battle.gd" type="Script" id=4]
@@ -78,7 +77,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=12]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("EnemyContainer/Enemy:modulate")
+tracks/0/path = NodePath("Camera2D:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -87,10 +86,10 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ) ]
+"values": [ Vector2( 0, 0 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("Camera2D:position")
+tracks/1/path = NodePath("EnemyContainer:modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
@@ -99,10 +98,10 @@ tracks/1/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 0,
-"values": [ Vector2( 0, 0 ) ]
+"values": [ Color( 1, 1, 1, 1 ) ]
 }
 tracks/2/type = "value"
-tracks/2/path = NodePath("EnemyContainer:modulate")
+tracks/2/path = NodePath("TextureRect:modulate")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/imported = false
@@ -118,16 +117,16 @@ tracks/2/keys = {
 resource_name = "enemy_damaged"
 length = 0.6
 tracks/0/type = "value"
-tracks/0/path = NodePath("EnemyContainer/Enemy:modulate")
-tracks/0/interp = 2
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
-"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 
 [sub_resource type="Animation" id=14]
@@ -158,6 +157,20 @@ margin_bottom = 621.0
 rect_scale = Vector2( 0.927415, 0.970926 )
 texture = ExtResource( 2 )
 
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -247.0
+margin_top = -154.5
+margin_right = 247.0
+margin_bottom = 154.5
+grow_horizontal = 2
+rect_pivot_offset = Vector2( 700, 0 )
+texture = ExtResource( 5 )
+stretch_mode = 1
+
 [node name="EnemyContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -185,19 +198,6 @@ custom_fonts/font = SubResource( 3 )
 text = "HP: 25/50"
 align = 1
 valign = 1
-
-[node name="Enemy" parent="EnemyContainer" instance=ExtResource( 1 )]
-position = Vector2( -317, -293 )
-scale = Vector2( 4.42096, 3.94573 )
-
-[node name="TextureRect" type="TextureRect" parent="EnemyContainer"]
-visible = false
-margin_top = 20.0
-margin_right = 463.0
-margin_bottom = 54.0
-grow_horizontal = 2
-rect_pivot_offset = Vector2( 700, 0 )
-texture = ExtResource( 5 )
 
 [node name="PlayerPanel" type="Panel" parent="."]
 anchor_top = 1.0
