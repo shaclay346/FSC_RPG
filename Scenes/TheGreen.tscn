@@ -1,9 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/ground tiles/new tiles/Tall Grass hill tiles v.2.png" type="Texture" id=1]
 [ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" type="Texture" id=3]
 [ext_resource path="res://Characters/Zombie.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/TheGreen.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Textbox.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Tall Grass hill tiles v.2.png 0"
@@ -304,6 +306,7 @@ points = PoolVector2Array( 0, 0, 33, 0, 33, 33, 0, 33 )
 [node name="TheGreen" type="Node2D"]
 position = Vector2( 1, -71 )
 scale = Vector2( 2.61072, 2.29375 )
+script = ExtResource( 5 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -328,3 +331,5 @@ position = Vector2( 196.114, 175.695 )
 
 [node name="Zombie2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 308.344, 306.485 )
+
+[node name="Textbox" parent="." instance=ExtResource( 6 )]
